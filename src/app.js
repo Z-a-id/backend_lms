@@ -39,7 +39,9 @@ app.use(cors({
     const allowedOrigins = [
       "http://localhost:3000", // Local development
       "https://frontend-silk-three-25.vercel.app",
-      "https://frontend-lms-zaid.vercel.app",// Deployed frontend
+      "https://frontend-lms-zaid.vercel.app",
+      "https://frontend-lms-zaid-zaid-javaids-projects.vercel.app",
+      "https://frontend-lms-zaid-git-main-zaid-javaids-projects.vercel.app",// Deployed frontend
     ];
     if (!origin || allowedOrigins.includes(origin)) {
       callback(null, true);
