@@ -8,7 +8,7 @@ const sessions = require("express-session")
 const { apiV1 } = require("./routes")
 const { connectDb } = require("./db")
 const { UserModel } = require("./models/user")
-const cors=require("cors")
+
 const app = express()
 
 app.use(morgan("dev"))
@@ -34,10 +34,7 @@ app.use(
     resave: true,
   })
 )
-app.use(cors({
-  origin: "https://frontend-silk-three-25.vercel.app/books", // Replace with your actual frontend URL
-  credentials: true, // Allow cookies or authorization headers if needed
-}));
+
 app.use("/v1", apiV1)
 
 app.use((req, res) => {
