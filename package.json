@@ -15,7 +15,7 @@
     "mongodb": "^4.8.1",
     "mongoose": "^6.5.0",
     "morgan": "~1.9.1",
-    "cors":"^2.8.5"
+    
   },
   "devDependencies": {
     "nodemon": "^2.0.19",
